@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-
+    --dark-grey: #32313f;
+    --cream: #ebd4b0;
+    --dark-orange: #d49a2f;
 }
 
 * {
@@ -14,14 +16,21 @@ body {
     font-family: 'Roboto';
     max-width: 100%;
     overflow-x: hidden;
+    background-color: var(--dark-grey);
+}
+
+:is(header, .menu-header, .menu-item) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
     padding: 10px 20px; 
-    justify-content: space-between;
     align-content: center;
+    background-color: var(--dark-orange);
+    color: whitesmoke;
+    font-style: italic;
 }
 
 header nav {
@@ -54,18 +63,22 @@ img {
 }
 
 #content {
+    
+}
+
+#home {
     position: relative;
     width: 100%;
     text-align: center;
 }
 
-#content-bg {
+#home-bg {
     z-index: 1;
     height: 500px;
     width: 100%;
 }
 
-#content-text {
+#home-text {
     padding: 20px;
     position: absolute;
     top: 30px;
@@ -84,5 +97,34 @@ img {
 
 .small-text {
     font-weight: 500;
+}
+
+#menu {
+    margin: 30px 75px;
+    padding: 20px 50px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    border-color: var(--dark-orange);
+    background-color: whitesmoke;
+    font-weight: 500;
+}
+
+.menu-header {
+    font-weight: 600;
+}
+
+.menu-categories h3 {
+    text-align: center;
+    color: var(--dark-orange);
+}
+
+.menu-item {
+    
+}
+
+.menu-name {
+    
+    
 }
 

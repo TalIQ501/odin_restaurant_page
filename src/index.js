@@ -1,35 +1,39 @@
 import './styles.css'
-import contentImgFile from './img/Lasagna by foodart.jpg';
+import homeImgFile from './img/Lasagna by foodart.jpg';
 
-const divContent = document.getElementById('content');
+const divContent = document.getElementById('home');
 
 const homePage = () => {
-    const contentBg = document.createElement('div');
-    contentBg.setAttribute('id', 'content-bg');
-    contentBg.classList.add('img-container');
+    const homeDiv = document.createElement('div');
+    homeDiv.setAttribute('id', 'home')
 
-    const contentImg = document.createElement('img');
-    contentImg.src = contentImgFile;
+    const homeBg = document.createElement('div');
+    homeBg.setAttribute('id', 'home-bg');
+    homeBg.classList.add('img-container');
 
-    contentBg.appendChild(contentImg);
+    const homeImg = document.createElement('img');
+    homeImg.src = homeImgFile;
 
-    const contentText = document.createElement('div');
-    contentText.setAttribute('id', 'content-text');
-    contentText.classList.add('border-section');
+    homeBg.appendChild(homeImg);
+
+    const homeText = document.createElement('div');
+    homeText.setAttribute('id', 'home-text');
+    homeText.classList.add('border-section');
 
     const headline = document.createElement('p');
     headline.classList.add('headline');
-    headline.textContent = 'Savour the Flavour';
+    headline.texthome = 'Savour the Flavour';
 
     const smallText = document.createElement('p');
     smallText.classList.add('small-text');
-    smallText.textContent = 'Eat delicious food from across the globe, inside our cosy restaurant';
+    smallText.texthome = 'Eat delicious food from across the globe, inside our cosy restaurant';
 
-    contentText.appendChild(headline);
-    contentText.appendChild(smallText);
+    homeText.appendChild(headline);
+    homeText.appendChild(smallText);
 
-    divContent.appendChild(contentBg);
-    divContent.appendChild(contentText);
+    homeDiv.appendChild(homeBg);
+    homeDiv.appendChild(homeText);
+
+    divContent.appendChild(homeDiv)
 }
 
-homePage();
