@@ -19,7 +19,7 @@ body {
     background-color: var(--dark-grey);
 }
 
-:is(header, .menu-header, .menu-item) {
+:is(header, #menu-header, .menu-item) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -110,21 +110,13 @@ img {
     font-weight: 500;
 }
 
-.menu-header {
+#menu-header {
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
 .menu-categories h3 {
+    font-size: 1.5rem;
     text-align: center;
     color: var(--dark-orange);
 }
-
-.menu-item {
-    
-}
-
-.menu-name {
-    
-    
-}
-
