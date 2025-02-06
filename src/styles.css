@@ -19,7 +19,7 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    padding: 10px 20px;
+    padding: 10px 20px; 
     justify-content: space-between;
     align-content: center;
 }
@@ -29,6 +29,11 @@ header nav {
     flex-direction: row;
     gap: 20px;
     align-items: center;
+}
+
+#logo-div {
+    display: flex;
+    flex-direction: row;
 }
 
 .nav-elem {
@@ -80,3 +85,4 @@ img {
 .small-text {
     font-weight: 500;
 }
+
