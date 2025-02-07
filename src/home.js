@@ -1,6 +1,6 @@
 import homeImgFile from './img/Lasagna by foodart.jpg';
 
-export const homePage = () => {
+export const homePage = (targetDiv) => {
     const homeDiv = document.createElement('div');
     homeDiv.setAttribute('id', 'home')
 
@@ -19,11 +19,11 @@ export const homePage = () => {
 
     const headline = document.createElement('p');
     headline.classList.add('headline');
-    headline.texthome = 'Savour the Flavour';
+    headline.textContent = 'Savour the Flavour';
 
     const smallText = document.createElement('p');
     smallText.classList.add('small-text');
-    smallText.texthome = 'Eat delicious food from across the globe, inside our cosy restaurant';
+    smallText.textContent = 'Eat delicious food from across the globe, inside our cosy restaurant';
 
     homeText.appendChild(headline);
     homeText.appendChild(smallText);
@@ -31,5 +31,5 @@ export const homePage = () => {
     homeDiv.appendChild(homeBg);
     homeDiv.appendChild(homeText);
 
-    divContent.appendChild(homeDiv)
+    targetDiv.appendChild(homeDiv)
 }
