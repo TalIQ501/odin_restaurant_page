@@ -7,11 +7,11 @@ export const menuPage = (targetDiv) => {
 
     const menuHeaderName = document.createElement('div');
     menuHeaderName.setAttribute('id', 'menu-header-name');
-    menuHeaderName.textContent = 'Dish'
+    menuHeaderName.textContent = 'Dish';
 
     const menuHeaderPrice = document.createElement('div');
     menuHeaderPrice.setAttribute('id', 'menu-header-price');
-    menuHeaderPrice.textContent = 'Price'
+    menuHeaderPrice.textContent = 'Price';
 
     menuHeader.appendChild(menuHeaderName)
     menuHeader.appendChild(menuHeaderPrice)
@@ -28,7 +28,7 @@ export const menuPage = (targetDiv) => {
 
     const garlicBreadName = document.createElement('p');
     garlicBreadName.classList.add('menu-name');
-    garlicBreadName.textContent = 'Garlic Bread'
+    garlicBreadName.textContent = 'Garlic Bread';
 
     const garlicBreadPrice = document.createElement('p');
     garlicBreadPrice.classList.add('menu-price');
@@ -77,7 +77,7 @@ export const menuPage = (targetDiv) => {
     const mainDishesHead = document.createElement('h3');
     mainDishesHead.textContent = 'Main Dishes';
 
-    const spaghetti = document.createElement('div')
+    const spaghetti = document.createElement('div');
     spaghetti.classList.add('menu-item');
 
     const spaghettiName = document.createElement('p');
@@ -91,7 +91,7 @@ export const menuPage = (targetDiv) => {
     spaghetti.appendChild(spaghettiName);
     spaghetti.appendChild(spaghettiPrice);
 
-    const steak = document.createElement('div')
+    const steak = document.createElement('div');
     steak.classList.add('menu-item');
 
     const steakName = document.createElement('p');
@@ -133,7 +133,7 @@ export const menuPage = (targetDiv) => {
     friedFish.appendChild(friedFishName);
     friedFish.appendChild(friedFishPrice);
 
-    const cheeseBurger = document.createElement('div')
+    const cheeseBurger = document.createElement('div');
     cheeseBurger.classList.add('menu-item');
 
     const cheeseBurgerName = document.createElement('p');
@@ -161,7 +161,7 @@ export const menuPage = (targetDiv) => {
     const beveragesHead = document.createElement('h3');
     beveragesHead.textContent = 'Appetizers';
 
-    const softDrink = document.createElement('div')
+    const softDrink = document.createElement('div');
     softDrink.classList.add('menu-item');
 
     const softDrinkName = document.createElement('p');
@@ -175,7 +175,7 @@ export const menuPage = (targetDiv) => {
     softDrink.appendChild(softDrinkName);
     softDrink.appendChild(softDrinkPrice);
 
-    const tea = document.createElement('div')
+    const tea = document.createElement('div');
     tea.classList.add('menu-item');
 
     const teaName = document.createElement('p');
@@ -189,7 +189,7 @@ export const menuPage = (targetDiv) => {
     tea.appendChild(teaName);
     tea.appendChild(teaPrice);
 
-    const coffee = document.createElement('div')
+    const coffee = document.createElement('div');
     coffee.classList.add('menu-item');
 
     const coffeeName = document.createElement('p');
